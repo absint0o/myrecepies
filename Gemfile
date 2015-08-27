@@ -44,13 +44,14 @@ group :development, :test do
   gem 'bootstrap-sass', '~> 3.3.5'
   
   
-group :development, :test do
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-  gem 'pry'
-end
-
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+  group :development, :test do
+    # Use sqlite3 as the database for Active Record
+    gem 'sqlite3'
+    gem 'pry'
+  end
+  
+  group :production do
+    gem 'pg'
+    gem 'rails_12factor'
+  end
 end
