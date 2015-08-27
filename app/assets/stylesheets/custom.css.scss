@@ -2,8 +2,11 @@ $navbar-default-bg: #312312;
 $light-orange: #ff8c00;
 $navbar-default-color: $light-orange;
 
+// Keep this order!
 @import "bootstrap-sprockets";
+@import "config"; // Overwrite bootstrap variables here!
 @import "bootstrap";
+// Place custom css depending on bootstrap variables here!
 
 #logo{ 
  margin-top: 10px;
